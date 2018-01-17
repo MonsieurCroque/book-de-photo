@@ -1,0 +1,286 @@
+@font-face { font-family: "Sofia";  src: url('fonts/Sofia_Pro_Light.otf'); }
+@font-face { font-family: "Sofia_Bold";  src: url('fonts/Sofia_Pro_Bold.otf'); }
+@font-face { font-family: "Sofia_Black";  src: url('fonts/Sofia_Pro_Black.otf'); }
+@font-face{font-family: "Montserrat"; src: url('fonts/MontserratAlternates-Light.otf'); } 
+
+@page{size: 672px 950px; margin: 0px 0px 0px 0px; }
+
+html { 
+    height: 100%;
+    margin: 0px;
+}
+
+body {
+    width: 672px;
+    margin: 0px;
+    background-color: white;
+}
+
+.page_couv {
+    background-image: url("couvParis.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Page Franky*/
+.page_dean{
+  width: 672px;
+  height: 950px;
+  background-image: url("https://i.imgur.com/e7iqdKm.png");
+  background-repeat: no-repeat;
+  background-size:  672px auto;
+  border: none; 
+}
+
+.top_dean{
+	position: absolute;
+	height: 320px;
+	color: white;
+}
+
+.message{
+	font-family: arial;
+	font-size: 20px;
+	border-style: solid;
+	border-left: none;
+	border-color: white;
+	border-width: 5px;
+	width: 200px;
+	margin-top: 100px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 20px;
+	position: absolute;
+}
+
+
+.dean_name{
+	border-style: none;
+	width: 300px;
+	height: 120px;
+	font-family: arial;
+	font-size: 55px;
+	font-weight: bold;
+	margin-top: 160px;
+	margin-left: 60px;
+	position: absolute;
+
+}
+
+.dean_pic{
+	width: 200px;
+	height: auto;
+	margin-top: 96px;
+	z-index: 0;
+	position: absolute;
+	margin-left: 400px;
+}
+
+.cadre_vert{
+	width: 170px;
+	height: 20px;
+	margin-left: 330px;
+	background-color: #008168;
+	z-index: 3;
+	position: absolute;
+	margin-top: 320px;
+}
+
+.discours{
+	color: black;
+	background-color: white;
+	width: 400px;
+	height: 470px;
+	margin-left: 60px;
+	margin-top: 340px;
+	padding: 20px 20px 20px 20px;
+	text-align: justify;
+	position: absolute;
+}
+
+.logo{
+	width: 200px;
+	height: auto;
+	margin-left: 470px;
+	position: absolute;
+	margin-top: 860px;
+}
+
+/* Page partner */
+.page_partner{
+  width: 672px;
+  height: 950px;
+  background-image: url("https://i.imgur.com/X69JWhA.png");
+  background-repeat: no-repeat;
+  background-size:  672px auto;
+  border: none;
+}
+
+.top_partner{
+	position: absolute;
+	height: 320px;
+	color: white;
+}
+
+.message_partner{
+	font-family: arial;
+	font-size: 20px;
+	border-style: solid;
+	border-left: none;
+	border-color: white;
+	border-width: 5px;
+	width: 200px;
+	margin-top: 100px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 20px;
+	position: absolute;
+}
+
+.partner_name{
+	border-style: none;
+	width: 300px;
+	height: 120px;
+	font-family: arial;
+	font-size: 55px;
+	font-weight: bold;
+    margin-left: 360px;
+    margin-top: 60px;
+
+}
+
+.partner_pic{
+	width: auto;
+	height: 250px;
+	margin-top: 40px;
+	z-index: 0;
+	position: absolute;
+	margin-left: 150px;
+
+}
+
+.cadre_vert_partner{
+	width: 170px;
+	height: 20px;
+	margin-left: 330px;
+	background-color: #008168;
+	z-index: 3;
+	position: absolute;
+	margin-top: 270px;
+}
+
+.discours_partner{
+	color: black;
+	background-color: white;
+	width: 400px;
+	height: 360px;
+	margin-left: 60px;
+	margin-top: 290px;
+	padding: 10px 20px 0px 20px;
+	text-align: justify;
+	position: absolute;
+}
+
+.logo_partner{
+	width: 200px;
+	height: auto;
+	margin-left: 470px;
+	margin-top: 670px;
+	position: absolute;
+}
+
+
+/*pages photos*/
+
+.page{
+	width: 672px;
+    height: 950px;
+    background-size: 672px auto;
+	background-image: url("https://i.imgur.com/5NVxTyF.png");
+	background-repeat: no-repeat;
+	background-size:  672px auto;
+}
+
+.pictures {
+  display: flex; /* crée un contexte flex pour ses enfants */
+  page-break-inside: avoid;
+}
+
+.frame {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    background-color: white;
+    height: 211px;
+    z-index: 10;
+    object-fit: contain;
+}
+
+.frame img {
+    height: 211px;
+    width: 160px;
+    z-index: -10;
+}
+.pictures:nth-of-type(1) .frame:nth-of-type(1), .pictures:nth-of-type(1) .frame:nth-of-type(2), .pictures:nth-of-type(1) .frame:nth-of-type(3){
+  margin-top: 80px;
+}
+
+.frame:nth-of-type(1){
+    margin-left: 80px;
+}
+
+.frame:nth-of-type(2), .frame:nth-of-type(3){
+    margin-left: 10px;
+}
+
+.pictures:nth-of-type(2) .frame:nth-of-type(1), .pictures:nth-of-type(2) .frame:nth-of-type(2), .pictures:nth-of-type(2) .frame:nth-of-type(3){
+  margin-top: 10px;
+}
+
+.pictures:nth-of-type(3) .frame:nth-of-type(1), .pictures:nth-of-type(3) .frame:nth-of-type(2), .pictures:nth-of-type(3) .frame:nth-of-type(3){
+  margin-top: 10px;
+}
+
+.names{
+  color: white;
+  font-family: "Sofia_Black";
+  margin-top: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+.names_line{
+    margin-left: 80px;
+}
+
+.names_line:nth-of-type(1){
+    margin-top: 20px;
+}
+
+.names:nth-of-type(2), .names:nth-of-type(3){
+    margin-left: 70px;
+}
+
+.pageNumber{
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 50px;
+    color: white;
+    font-family: "Sofia_Bold";
+    font-size: 30px;
+}
+
+/* Autres pages */
+
+.page_last {
+    background-image: url("HDCOV.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page_couv, .page_last, .page_dean{
+    width: 672px;
+    height: 950px;
+    background-size: 672px auto;
+    background-repeat: no-repeat;
+}
